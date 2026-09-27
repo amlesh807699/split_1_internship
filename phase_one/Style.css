@@ -100,3 +100,568 @@ img {
   max-width: 100%;
     display: block;
 }
+
+.site-shell {
+    min-width: 0;
+    overflow: hidden;
+
+    background: var(--surface);
+
+    transition:
+        background-color 240ms ease,
+        color 240ms ease;
+}
+
+.section {
+    width: min(
+        var(--max-width),
+        calc(100% - var(--page-gutter) * 2)
+    );
+
+    margin-inline: auto;
+}
+
+
+
+/* navbar css */
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    border-bottom: 1px solid
+        color-mix(
+            in srgb,
+            var(--border) 85%,
+            transparent
+        );
+
+    background: color-mix(
+        in srgb,
+        var(--surface) 88%,
+        transparent
+    );
+
+    backdrop-filter: blur(18px);
+}
+
+.nav-inner {
+    width: min(
+        var(--max-width),
+        calc(100% - var(--page-gutter) * 2)
+    );
+
+    height: 76px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* logo */
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.nav-logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+.logo-it {
+    color: var(--accent-dark);
+}
+
+
+/*  navbar links */
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+
+    margin-left: auto;
+    margin-right: 38px;
+}
+
+.nav-links > a:not(.nav-cta) {
+    position: relative;
+
+    padding: 29px 0 27px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: color 160ms ease;
+}
+
+.nav-links > a:not(.nav-cta)::after {
+    position: absolute;
+
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    height: 3px;
+
+    background: var(--accent);
+
+    content: "";
+
+    transform: scaleX(0);
+
+    transition: transform 160ms ease;
+}
+
+.nav-links > a:hover,
+.nav-links > a.active {
+    color: var(--text);
+}
+
+.nav-links > a.active::after {
+    transform: scaleX(1);
+}
+
+
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-button {
+    min-width: 72px;
+    height: 42px;
+
+    padding: 0 14px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: var(--surface);
+
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    transition:
+        border-color 160ms ease,
+        background 160ms ease,
+        transform 160ms ease;
+}
+
+.icon-button:hover {
+    border-color: var(--accent-dark);
+
+    background: color-mix(
+        in srgb,
+        var(--accent) 15%,
+        var(--surface)
+    );
+
+    transform: translateY(-1px);
+}
+
+.nav-cta {
+    padding: 12px 19px;
+
+    border-radius: 8px;
+
+    background: var(--ink);
+    color: var(--surface);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        background 160ms ease,
+        color 160ms ease,
+        transform 160ms ease;
+}
+
+.nav-cta:hover {
+    background: var(--accent);
+    color: #0b0b0b;
+
+    transform: translateY(-1px);
+}
+
+
+.mobile-only,
+.menu-button {
+    display: none;
+}
+
+/* hero section */
+
+.hero {
+    min-height: 760px;
+
+    padding-top: 156px;
+    padding-bottom: 82px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(490px, 0.92fr);
+
+    align-items: center;
+
+    gap: clamp(50px, 7vw, 110px);
+}
+
+
+
+.eyebrow {
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--muted);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.eyebrow > span {
+    width: 25px;
+    height: 3px;
+
+    background: var(--accent);
+
+    border-radius: 10px;
+}
+
+
+/* 
+   HERO TEXT */
+
+.hero h1 {
+    max-width: 720px;
+
+    margin: 0;
+
+    font-size: clamp(52px, 5vw, 76px);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.065em;
+}
+
+h1 em,
+.cta-content h2 em {
+    position: relative;
+
+    color: var(--text);
+
+    font-style: normal;
+
+    white-space: nowrap;
+
+    z-index: 0;
+}
+
+h1 em::after,
+.cta-content h2 em::after {
+    position: absolute;
+
+    z-index: -1;
+
+    right: 0;
+    bottom: 0.07em;
+    left: 0;
+
+    height: 0.22em;
+
+    background: var(--accent);
+
+    content: "";
+}
+
+.hero-lede {
+    max-width: 620px;
+
+    margin: 28px 0 0;
+
+    color: var(--muted);
+
+    font-size: 18px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-actions {
+    margin-top: 38px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.button {
+    min-height: 52px;
+
+    padding: 0 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    border: 1px solid transparent;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        background 180ms ease,
+        border-color 180ms ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* BLACK BUTTON */
+
+.button-primary {
+    background: var(--ink);
+    color: var(--surface);
+
+    box-shadow:
+        0 10px 25px
+        color-mix(
+            in srgb,
+            var(--ink) 15%,
+            transparent
+        );
+}
+
+.button-primary:hover {
+    background: var(--accent);
+    color: #0b0b0b;
+
+    box-shadow:
+        0 14px 28px
+        rgba(217, 169, 0, 0.25);
+}
+
+
+/* OUTLINE BUTTON */
+
+.button-secondary {
+    border-color:
+        color-mix(
+            in srgb,
+            var(--text) 25%,
+            var(--border)
+        );
+
+    background: transparent;
+}
+
+.button-secondary:hover {
+    border-color: var(--accent-dark);
+
+    box-shadow:
+        inset 0 -3px 0 var(--accent);
+}
+
+
+/* =========================================================
+   HERO PROOF
+========================================================= */
+
+.hero-proof {
+    margin-top: 42px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+.hero-proof p {
+    margin: 0;
+    color: #555555;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.proof-line {
+    width: 34px;
+    height: 2px;
+
+    background: var(--accent);
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   HERO DASHBOARD
+========================================================= */
+
+.hero-visual {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 22px;
+
+    overflow: hidden;
+
+    border: 1px solid #2b2b2b;
+
+    border-radius: 18px;
+
+    background: #101010;
+
+    color: #ffffff;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-visual::after {
+    position: absolute;
+
+    right: -100px;
+    bottom: -130px;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    opacity: 0.08;
+
+    filter: blur(30px);
+
+    content: "";
+}
+
+.visual-grid {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.08;
+
+    background-image:
+        linear-gradient(
+            #fff 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            #fff 1px,
+            transparent 1px
+        );
+
+    background-size: 34px 34px;
+}
+
+.visual-topbar,
+.visual-content,
+.visual-caption {
+    position: relative;
+    z-index: 1;
+}
+
+.visual-topbar {
+    padding-bottom: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #2c2c2c;
+
+    font-size: 11px;
+}
+
+.visual-brand,
+.visual-status {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+.visual-brandmark {
+    width: 26px;
+    height: 26px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 6px;
+
+    background: var(--accent);
+    color: #0b0b0b;
+
+    font-weight: 800;
+}
+
+.visual-status {
+    color: #9b9b9b;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    box-shadow:
+        0 0 0 4px
+        rgba(244, 197, 66, 0.1);
+}
+
