@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Prodesk IT builds modern digital experiences, websites, software solutions, and digital growth strategies."
+    >
+
+    <meta
+        name="theme-color"
+        content="#ffffff"
+    >
+
+    <title>Prodesk IT — Digital Growth, Engineered</title>
+
+    <!-- Favicon -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="./images/prodesk.png"
+    >
+
+    <!-- Tailwind generated CSS -->
+    <link
+        rel="stylesheet"
+        href="./dist/output.css"
+    >
+</head>
+
+<body
+    class="min-w-0 overflow-x-hidden bg-white font-sans text-[#111111] antialiased transition-colors duration-300 dark:bg-[#0b0b0b] dark:text-white"
+>
+
+<div class="min-h-screen overflow-hidden bg-white dark:bg-[#0b0b0b]">
+
+    <!-- =========================================================
+         NAVBAR
+    ========================================================== -->
+
+    <header
+        id="navbar"
+        class="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-white/80 backdrop-blur-xl transition-colors duration-300 dark:border-white/10 dark:bg-black/70"
+    >
+
+        <div
+            class="mx-auto flex h-[76px] w-[min(1320px,calc(100%-40px))] items-center justify-between lg:w-[min(1320px,calc(100%-184px))]"
+        >
+
+            <!-- LOGO -->
+
+            <a
+                href="#home"
+                class="inline-flex shrink-0 items-center gap-[3px] text-[19px] font-extrabold tracking-[-0.04em]"
+                aria-label="Prodesk IT home"
+            >
+
+                <img
+                    class="mr-[7px] h-10 w-10 rounded-full object-cover"
+                    src="./images/prodesk.png"
+                    alt="Prodesk IT logo"
+                    width="40"
+                    height="40"
+                >
+
+                <span>
+                    Prodesk
+                </span>
+
+                <span class="text-[#765800] dark:text-[#f4c542]">
+                    IT
+                </span>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav
+                id="mobile-menu"
+                class="absolute left-0 right-0 top-[76px] hidden flex-col gap-0 border-b border-black/10 bg-white/95 px-5 py-5 backdrop-blur-xl md:static md:flex md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0 md:backdrop-blur-none dark:border-white/10 dark:bg-[#0b0b0b]/95 md:dark:bg-transparent"
+                aria-label="Primary navigation"
+            >
+
+                <a
+                    href="#home"
+                    data-nav-link
+                    class="border-b border-black/10 py-4 text-sm font-semibold text-black/70 transition hover:text-black md:border-0 md:py-[29px] dark:border-white/10 dark:text-white/70 dark:hover:text-white"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#about"
+                    data-nav-link
+                    class="border-b border-black/10 py-4 text-sm font-semibold text-black/70 transition hover:text-black md:border-0 md:py-[29px] dark:border-white/10 dark:text-white/70 dark:hover:text-white"
+                >
+                    About
+                </a>
+
+                <a
+                    href="#services"
+                    data-nav-link
+                    class="border-b border-black/10 py-4 text-sm font-semibold text-black/70 transition hover:text-black md:border-0 md:py-[29px] dark:border-white/10 dark:text-white/70 dark:hover:text-white"
+                >
+                    Services
+                </a>
+
+                <a
+                    href="#why-us"
+                    data-nav-link
+                    class="border-b border-black/10 py-4 text-sm font-semibold text-black/70 transition hover:text-black md:border-0 md:py-[29px] dark:border-white/10 dark:text-white/70 dark:hover:text-white"
+                >
+                    Why Us
+                </a>
+
+                <a
+                    href="#contact"
+                    data-nav-link
+                    class="border-b border-black/10 py-4 text-sm font-semibold text-black/70 transition hover:text-black md:border-0 md:py-[29px] dark:border-white/10 dark:text-white/70 dark:hover:text-white"
+                >
+                    Contact
+                </a>
+
+                <!-- Mobile CTA -->
+
+                <a
+                    href="#contact"
+                    class="mt-4 flex justify-center rounded-lg bg-[#0b0b0b] px-5 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#f4c542] hover:text-[#0b0b0b] md:hidden dark:bg-white dark:text-black"
+                >
+                    Start a project
+                </a>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="flex items-center gap-2">
+
+                <!-- Theme -->
+
+                <button
+                    id="themeToggle"
+                    type="button"
+                    class="grid h-[42px] min-w-[72px] place-items-center rounded-full border border-black/10 bg-white px-3.5 text-[11px] font-bold transition hover:-translate-y-0.5 hover:border-[#765800] hover:bg-[#f4c542]/15 dark:border-white/15 dark:bg-[#151515]"
+                    aria-label="Switch to dark theme"
+                >
+                    Dark
+                </button>
+
+
+                <!-- Desktop CTA -->
+
+                <a
+                    href="#contact"
+                    class="hidden rounded-lg bg-[#0b0b0b] px-[19px] py-3 text-[13px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#f4c542] hover:text-[#0b0b0b] md:inline-flex dark:bg-white dark:text-black"
+                >
+                    Start a project
+                </a>
+
+
+                <!-- Mobile menu -->
+
+                <button
+                    id="menuToggle"
+                    type="button"
+                    class="grid h-[42px] min-w-[72px] place-items-center rounded-full border border-black/10 bg-white px-3.5 text-[11px] font-bold transition hover:border-[#765800] dark:border-white/15 dark:bg-[#151515] md:hidden"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                    aria-label="Open navigation menu"
+                >
+                    Menu
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main>
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section
+            id="home"
+            class="mx-auto grid min-h-[760px] w-[min(1320px,calc(100%-40px))] grid-cols-1 items-center gap-14 pb-[68px] pt-[130px] md:gap-[70px] lg:w-[min(1320px,calc(100%-184px))] lg:grid-cols-[minmax(0,1fr)_minmax(490px,0.92fr)] lg:gap-[clamp(50px,7vw,110px)] lg:pb-[82px] lg:pt-[156px]"
+        >
+
+            <!-- HERO COPY -->
+
+            <div>
+
+                <div
+                    class="mb-[22px] flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.17em] text-black/70 dark:text-white/70"
+                >
+                    <span
+                        class="h-[3px] w-[25px] rounded-full bg-[#f4c542]"
+                    ></span>
+
+                    Digital growth, engineered
+                </div>
+
+
+                <h1
+                    class="max-w-[720px] text-[clamp(43px,12.5vw,58px)] font-extrabold leading-[0.98] tracking-[-0.065em] lg:text-[clamp(52px,5vw,76px)]"
+                >
+                    We Build Digital Experiences That
+
+                    <span class="relative whitespace-nowrap">
+                        <span class="relative z-10">
+                            Drive Growth
+                        </span>
+
+                        <span
+                            class="absolute bottom-[0.07em] left-0 right-0 z-0 h-[0.22em] bg-[#f4c542]"
+                            aria-hidden="true"
+                        ></span>
+                    </span>
+
+                </h1>
+
+
+                <p
+                    class="mt-7 max-w-[620px] text-base leading-[1.75] text-black/70 md:text-lg dark:text-white/70"
+                >
+                    From high-performance websites to digital marketing
+                    strategies, we help businesses build, grow, and scale
+                    their digital presence.
+                </p>
+
+
+                <!-- BUTTONS -->
+
+                <div class="mt-[38px] flex flex-wrap gap-3">
+
+                    <a
+                        href="#contact"
+                        class="inline-flex min-h-[52px] items-center justify-center gap-3 rounded-[9px] bg-[#0b0b0b] px-6 text-sm font-bold text-white shadow-lg shadow-black/10 transition hover:-translate-y-1 hover:bg-[#f4c542] hover:text-[#0b0b0b] dark:bg-white dark:text-black"
+                    >
+                        Get Started →
+                    </a>
+
+                    <a
+                        href="#services"
+                        class="inline-flex min-h-[52px] items-center justify-center gap-3 rounded-[9px] border border-black/20 bg-transparent px-6 text-sm font-bold transition hover:-translate-y-1 hover:border-[#765800] hover:shadow-[inset_0_-3px_0_#f4c542] dark:border-white/20"
+                    >
+                        Explore Services
+                    </a>
+
+                </div>
+
+
+                <!-- PROOF -->
+
+                <div class="mt-[42px] flex items-center gap-[13px]">
+
+                    <span
+                        class="h-0.5 w-[34px] rounded-full bg-[#f4c542]"
+                    ></span>
+
+                    <p class="m-0 text-xs font-medium text-black/70 dark:text-white/70">
+                        Strategy-led. Performance-focused. Built to scale.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO DASHBOARD -->
+
+            <div
+                class="relative min-w-0 overflow-hidden rounded-[18px] border border-[#2b2b2b] bg-[#101010] p-[22px] text-white shadow-2xl"
+                role="img"
+                aria-label="Digital performance dashboard showing growth metrics"
+            >
+
+                <div
+                    class="absolute inset-0 opacity-[0.08]"
+                    style="
+                        background-image:
+                            linear-gradient(#fff 1px, transparent 1px),
+                            linear-gradient(90deg, #fff 1px, transparent 1px);
+                        background-size: 34px 34px;
+                    "
+                    aria-hidden="true"
+                ></div>
+
+
+                <!-- DASHBOARD TOP -->
+
+                <div
+                    class="relative z-10 flex items-center justify-between border-b border-[#2c2c2c] pb-[21px] text-[11px]"
+                >
+
+                    <div class="flex items-center gap-[9px]">
+
+                        <span
+                            class="grid h-[26px] w-[26px] place-items-center rounded-md bg-[#f4c542] font-extrabold text-[#0b0b0b]"
+                        >
+                            P
+                        </span>
+
+                        <span>
+                            Growth Console
+                        </span>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-[9px] text-[#9b9b9b]">
+
+                        <span
+                            class="h-[7px] w-[7px] rounded-full bg-[#f4c542] shadow-[0_0_0_4px_rgba(244,197,66,0.1)]"
+                        ></span>
+
+                        insights
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD CONTENT -->
+
+                <div
+                    class="relative z-10 grid grid-cols-1 gap-6 py-[34px] md:grid-cols-[1fr_150px]"
+                >
+
+                    <div>
+
+                        <span
+                            class="text-[9px] font-semibold tracking-[0.13em] text-[#a0a0a0]"
+                        >
+                            DIGITAL PERFORMANCE
+                        </span>
+
+                        <div
+                            class="my-2 text-[38px] font-semibold tracking-[-0.06em] text-[#f4c542]"
+                        >
+                            +42.8%
+                        </div>
+
+                        <span class="text-[9px] font-semibold text-[#a0a0a0]">
+                            Growth trajectory
+                        </span>
+
+<span></span>
+                        <div class="mt-[15px] h-[164px]">
+
+                            <img
+                                src="./images/Screenshot 2026-09-27 102006.png"
+                                alt="Digital performance growth chart"
+                                width="600"
+                                height="400"
+                                class="h-[140px] w-full rounded-md object-cover"
+                            >
+
+                            <div class="flex justify-between text-[8px] text-[#a3a3a3]">
+                                <span>JAN</span>
+                                <span>MAR</span>
+                                <span>MAY</span>
+                                <span>JUL</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- METRICS -->
+
+                    <div class="hidden flex-col justify-center gap-[21px] md:flex">
+
+                        <div class="grid grid-cols-[1fr_auto] gap-2">
+
+                            <span class="text-[9px] text-[#a3a3a3]">
+                                Organic reach
+                            </span>
+
+                            <strong class="text-[10px] text-[#f4c542]">
+                                78%
+                            </strong>
+
+                            <span class="col-span-2 h-[3px] overflow-hidden rounded-full bg-[#292929]">
+                                <span class="block h-full w-[78%] bg-[#f4c542]"></span>
+                            </span>
+
+                        </div>
+
+
+                        <div class="grid grid-cols-[1fr_auto] gap-2">
+
+                            <span class="text-[9px] text-[#a3a3a3]">
+                                Conversion
+                            </span>
+
+                            <strong class="text-[10px] text-[#f4c542]">
+                                64%
+                            </strong>
+
+                            <span class="col-span-2 h-[3px] overflow-hidden rounded-full bg-[#292929]">
+                                <span class="block h-full w-[64%] bg-[#f4c542]"></span>
+                            </span>
+
+                        </div>
+
+
+                        <div class="grid grid-cols-[1fr_auto] gap-2">
+
+                            <span class="text-[9px] text-[#a3a3a3]">
+                                Performance
+                            </span>
+
+                            <strong class="text-[10px] text-[#f4c542]">
+                                92%
+                            </strong>
+
+                            <span class="col-span-2 h-[3px] overflow-hidden rounded-full bg-[#292929]">
+                                <span class="block h-full w-[92%] bg-[#f4c542]"></span>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD FOOTER -->
+
+                <div
+                    class="relative z-10 flex justify-between border-t border-[#2c2c2c] pt-[17px] text-[8px] tracking-[0.1em] text-[#a3a3a3]"
+                >
+                    <span>
+                        PRODESK / INTELLIGENCE
+                    </span>
+
+                    <span>
+                        01 — 04
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TRUST STRIP
+        ====================================================== -->
+
+        <section
+            aria-label="Our working principles"
+            class="grid grid-cols-2 border-y border-black/10 bg-[#f7f7f5] dark:border-white/10 dark:bg-[#111111] lg:grid-cols-4"
+        >
+
+            <div class="flex min-h-[88px] items-center gap-2.5 border-b border-r border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:px-[clamp(20px,3vw,52px)] lg:py-[27px]">
+                <span class="text-[11px] font-bold text-[#5a4300]">
+                    01
+                </span>
+                <strong class="text-xs md:text-sm">
+                    Strategy first
+                </strong>
+            </div>
+
+            <div class="flex min-h-[88px] items-center gap-2.5 border-b border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:border-r lg:px-[clamp(20px,3vw,52px)] lg:py-[27px]">
+                <span class="text-[11px] font-bold text-[#5a4300]">
+                    02
+                </span>
+                <strong class="text-xs md:text-sm">
+                    Built for speed
+                </strong>
+            </div>
+
+            <div class="flex min-h-[88px] items-center gap-2.5 border-r border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:px-[clamp(20px,3vw,52px)] lg:py-[27px]">
+                <span class="text-[11px] font-bold text-[#5a4300]">
+                    03
+                </span>
+                <strong class="text-xs md:text-sm">
+                    Focused on outcomes
+                </strong>
+            </div>
+
+            <div class="flex min-h-[88px] items-center gap-2.5 px-5 py-5 lg:min-h-[112px] lg:px-[clamp(20px,3vw,52px)] lg:py-[27px]">
+                <span class="text-[11px] font-bold text-[#5a4300]">
+                    04
+                </span>
+                <strong class="text-xs md:text-sm">
+                    Reliable support
+                </strong>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section
+            id="about"
+            class="mx-auto grid w-[min(1320px,calc(100%-40px))] grid-cols-1 gap-[60px] py-[90px] lg:w-[min(1320px,calc(100%-184px))] lg:grid-cols-[minmax(400px,0.92fr)_minmax(0,1fr)] lg:items-center lg:gap-[clamp(70px,9vw,140px)] lg:py-[130px]"
+        >
+
+            <!-- ABOUT COPY -->
+
+            <div class="order-1 lg:order-2">
+
+                <div
+                    class="mb-[22px] flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.17em] text-black/70 dark:text-white/70"
+                >
+                    <span class="h-[3px] w-[25px] rounded-full bg-[#f4c542]"></span>
+                    About Prodesk IT
+                </div>
+
+
+                <h2
+                    class="text-[39px] font-extrabold leading-[1.08] tracking-[-0.055em] md:text-[48px] lg:text-[56px]"
+                >
+                    Building Digital Solutions That Matter
+                </h2>
+
+
+                <p
+                    class="mt-[25px] text-base leading-[1.75] text-black/70 dark:text-white/70"
+                >
+                    Prodesk IT is a digital marketing and technology
+                    company focused on building modern digital experiences,
+                    websites, software solutions, and growth strategies
+                    for businesses.
+                </p>
+
+
+                <!-- FEATURES -->
+
+                <div class="mt-[34px] grid gap-px bg-black/10 dark:bg-white/10">
+
+                    <article class="grid grid-cols-[72px_1fr] gap-3 bg-white py-[21px] dark:bg-[#0b0b0b] md:grid-cols-[82px_1fr] md:gap-[18px]">
+
+                        <div class="grid h-[42px] w-[72px] place-items-center rounded-[9px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] md:w-[82px]">
+                            CODE
+                        </div>
+
+                        <div>
+                            <h3 class="mb-[7px] mt-0 text-base font-bold">
+                                Modern Technology
+                            </h3>
+
+                            <p class="m-0 text-[13px] leading-[1.65] text-black/70 dark:text-white/70">
+                                We use modern tools and technologies to
+                                build reliable and scalable digital solutions.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="grid grid-cols-[72px_1fr] gap-3 bg-white py-[21px] dark:bg-[#0b0b0b] md:grid-cols-[82px_1fr] md:gap-[18px]">
+
+                        <div class="grid h-[42px] w-[72px] place-items-center rounded-[9px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] md:w-[82px]">
+                            GROWTH
+                        </div>
+
+                        <div>
+                            <h3 class="mb-[7px] mt-0 text-base font-bold">
+                                Result Driven
+                            </h3>
+
+                            <p class="m-0 text-[13px] leading-[1.65] text-black/70 dark:text-white/70">
+                                Our work focuses on practical outcomes such
+                                as visibility, engagement, leads, and business growth.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="grid grid-cols-[72px_1fr] gap-3 bg-white py-[21px] dark:bg-[#0b0b0b] md:grid-cols-[82px_1fr] md:gap-[18px]">
+
+                        <div class="grid h-[42px] w-[72px] place-items-center rounded-[9px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] md:w-[82px]">
+                            CLIENT
+                        </div>
+
+                        <div>
+                            <h3 class="mb-[7px] mt-0 text-base font-bold">
+                                Customer Focused
+                            </h3>
+
+                            <p class="m-0 text-[13px] leading-[1.65] text-black/70 dark:text-white/70">
+                                We build solutions around the actual
+                                requirements and goals of every client.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- ABOUT VISUAL -->
+
+            <div
+                class="relative order-2 min-h-[400px] overflow-hidden rounded-2xl bg-[#0f0f0f] text-white lg:order-1 lg:min-h-[570px]"
+            >
+
+                <div
+                    class="absolute inset-0 opacity-[0.12]"
+                    style="
+                        background-image:
+                            linear-gradient(#fff 1px, transparent 1px),
+                            linear-gradient(90deg, #fff 1px, transparent 1px);
+                        background-size: 52px 52px;
+                    "
+                    aria-hidden="true"
+                ></div>
+
+
+                <div
+                    class="absolute left-1/2 top-1/2 h-[310px] w-[310px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#363636] sm:h-[360px] sm:w-[360px]"
+                ></div>
+
+                <div
+                    class="absolute left-1/2 top-1/2 h-[410px] w-[410px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#363636] sm:h-[470px] sm:w-[470px]"
+                ></div>
+
+
+                <!-- CORE -->
+
+                <div
+                    class="absolute left-1/2 top-1/2 z-10 flex h-[190px] w-[190px] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[#484848] bg-[#121212] shadow-[0_0_0_12px_rgba(255,255,255,0.025)] sm:h-[230px] sm:w-[230px]"
+                >
+
+                    <span class="text-[8px] tracking-[0.16em] text-[#a3a3a3]">
+    BUILT WITH PURPOSE
+</span>
+
+                    <strong class="my-[13px] text-[40px] font-extrabold tracking-[-0.07em] text-[#f4c542] sm:text-[47px]">
+                        P/IT
+                    </strong>
+
+                   <span class="text-[9px] text-[#a3a3a3]">
+    Technology × Strategy
+</span>
+
+                </div>
+
+
+                <!-- COORDINATES -->
+
+                <div class="absolute left-[7%] top-[15%] z-10 border border-[#363636] bg-[#141414] px-3 py-[9px] text-[8px] tracking-[0.1em] text-[#8b8b8b]">
+                    01 / DISCOVER
+                </div>
+
+                <div class="absolute bottom-[23%] right-[6%] z-10 hidden border border-[#363636] bg-[#141414] px-3 py-[9px] text-[8px] tracking-[0.1em] text-[#8b8b8b] sm:block">
+                    02 / ENGINEER
+                </div>
+
+                <div class="absolute bottom-[10%] left-[10%] z-10 border border-[#363636] bg-[#141414] px-3 py-[9px] text-[8px] tracking-[0.1em] text-[#8b8b8b]">
+                    03 / GROW
+                </div>
+
+
+                <span
+                    class="absolute right-6 top-6 z-10 text-[8px] tracking-[0.12em] text-[#a3a3a3] [writing-mode:vertical-rl]"
+                >
+                    PRODESK SYSTEMS — 2026
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SERVICES
+        ====================================================== -->
+
+        <section
+            id="services"
+            class="border-y border-black/10 bg-[#f7f7f5] dark:border-white/10 dark:bg-[#111111]"
+        >
+
+            <div
+                class="mx-auto w-[min(1320px,calc(100%-40px))] py-[88px] lg:w-[min(1320px,calc(100%-184px))] lg:py-[124px]"
+            >
+
+                <div class="mb-[54px] flex flex-col items-start justify-between gap-5 lg:flex-row lg:items-end lg:gap-10">
+
+                    <div>
+
+                        <div class="mb-[22px] flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.17em] text-black/70 dark:text-white/70">
+
+                            <span class="h-[3px] w-[25px] rounded-full bg-[#f4c542]"></span>
+
+                            What we do
+
+                        </div>
+
+                        <h2
+                            class="text-[39px] font-extrabold leading-[1.08] tracking-[-0.055em] md:text-[48px] lg:text-[56px]"
+                        >
+                            Our Digital Services
+                        </h2>
+
+                    </div>
+
+
+                    <p class="max-w-[400px] text-base leading-[1.65] text-black/70 dark:text-white/70">
+                        Everything you need to build and grow
+                        a strong digital presence.
+                    </p>
+
+                </div>
+
+
+                <!-- SERVICE GRID -->
+
+                <div class="grid grid-cols-1 gap-[18px] lg:grid-cols-3">
+
+                    <!-- SERVICE 1 -->
+
+                    <article
+                        class="group relative min-h-[350px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-7 transition duration-200 hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515] lg:min-h-[370px] lg:p-[35px]"
+                    >
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition-transform duration-200 group-hover:scale-x-100"></div>
+
+                        <div class="flex items-start justify-between">
+
+                            <div class="grid min-h-[52px] min-w-[65px] place-items-center rounded-[11px] bg-[#f4c542]/25 px-3 text-[10px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                SEO
+                            </div>
+
+                            <span class="text-[10px] font-bold tracking-[0.1em] text-[#a3a3a3] dark:text-[#a3a3a3]">
+                                01
+                            </span>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[34px] max-w-[280px] text-[21px] font-bold leading-[1.25] tracking-[-0.025em]">
+                            Search Engine Optimization
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            Improve search visibility and organic growth
+                            through technical SEO, content strategy,
+                            and optimization.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="absolute bottom-[33px] left-[35px] flex items-center gap-2 text-[13px] font-bold transition hover:text-[#765800] dark:hover:text-[#f4c542]"
+                        >
+                            Learn More →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 2 -->
+
+                    <article
+                        class="group relative min-h-[350px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-7 transition duration-200 hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515] lg:min-h-[370px] lg:p-[35px]"
+                    >
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition-transform duration-200 group-hover:scale-x-100"></div>
+
+                        <div class="flex items-start justify-between">
+
+                            <div class="grid min-h-[52px] min-w-[65px] place-items-center rounded-[11px] bg-[#f4c542]/25 px-3 text-[10px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                DEV
+                            </div>
+
+                            <span class="text-[10px] font-bold tracking-[0.1em] text-black/70 dark:text-white/70">
+                                02
+                            </span>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[34px] max-w-[280px] text-[21px] font-bold leading-[1.25] tracking-[-0.025em]">
+                            Web Development
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            Modern, responsive, and high-performance
+                            websites built for speed, usability,
+                            accessibility, and conversion.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="absolute bottom-[33px] left-[35px] flex items-center gap-2 text-[13px] font-bold transition hover:text-[#765800] dark:hover:text-[#f4c542]"
+                        >
+                            Learn More →
+                        </a>
+
+                    </article>
+
+
+                    <!-- SERVICE 3 -->
+
+                    <article
+                        class="group relative min-h-[350px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-7 transition duration-200 hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515] lg:min-h-[370px] lg:p-[35px]"
+                    >
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition-transform duration-200 group-hover:scale-x-100"></div>
+
+                        <div class="flex items-start justify-between">
+
+                            <div class="grid min-h-[52px] min-w-[65px] place-items-center rounded-[11px] bg-[#f4c542]/25 px-3 text-[10px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                GROWTH
+                            </div>
+
+                            <span class="text-[10px] font-bold tracking-[0.1em] text-black/70 dark:text-white/70">
+                                03
+                            </span>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[34px] max-w-[280px] text-[21px] font-bold leading-[1.25] tracking-[-0.025em]">
+                            Digital Marketing
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            Data-driven marketing strategies designed
+                            to increase reach, generate qualified leads,
+                            and improve conversions.
+                        </p>
+
+                        <a
+                            href="#contact"
+                            class="absolute bottom-[33px] left-[35px] flex items-center gap-2 text-[13px] font-bold transition hover:text-[#765800] dark:hover:text-[#f4c542]"
+                        >
+                            Learn More →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             COMPANY INFO
+        ====================================================== -->
+
+        <section
+            aria-label="Company information"
+            class="grid grid-cols-2 border-b border-black/10 bg-[#f7f7f5] dark:border-white/10 dark:bg-[#111111] lg:grid-cols-4"
+        >
+
+            <div class="flex min-h-[100px] items-center gap-3 border-b border-r border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:border-b-0 lg:px-10">
+                <span class="text-sm font-bold text-[#5a4300]">
+                    15+
+                </span>
+                <strong class="text-xs leading-[1.35] md:text-sm">
+                    YEARS OF ENGINEERING EXCELLENCE
+                </strong>
+            </div>
+
+            <div class="flex min-h-[100px] items-center gap-3 border-b border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:border-b-0 lg:border-r lg:px-10">
+                <span class="text-sm font-bold text-[#5a4300]">
+                    300+
+                </span>
+                <strong class="text-xs leading-[1.35] md:text-sm">
+                    ENTERPRISE-GRADE PROJECTS DELIVERED
+                </strong>
+            </div>
+
+            <div class="flex min-h-[100px] items-center gap-3 border-r border-black/10 px-5 py-5 dark:border-white/10 lg:min-h-[112px] lg:border-r lg:px-10">
+                <span class="text-sm font-bold text-[#5a4300]">
+                    100%
+                </span>
+                <strong class="text-xs leading-[1.35] md:text-sm">
+                    ON-TIME DELIVERY
+                </strong>
+            </div>
+
+            <div class="flex min-h-[100px] items-center gap-3 px-5 py-5 lg:min-h-[112px] lg:px-10">
+                <span class="text-sm font-bold text-[#5a4300]">
+                    24/7
+                </span>
+                <strong class="text-xs leading-[1.35] md:text-sm">
+                    SUPPORT
+                </strong>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHY US
+        ====================================================== -->
+
+        <section
+            id="why-us"
+            class="border-b border-black/10 bg-white dark:border-white/10 dark:bg-[#0b0b0b]"
+        >
+
+            <div
+                class="mx-auto w-[min(1320px,calc(100%-40px))] py-[88px] lg:w-[min(1320px,calc(100%-184px))] lg:py-[124px]"
+            >
+
+                <div class="mb-[54px] flex flex-col items-start justify-between gap-5 lg:flex-row lg:items-end lg:gap-10">
+
+                    <div>
+
+                        <div class="mb-[22px] flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.17em] text-black/70 dark:text-white/70">
+                            <span class="h-[3px] w-[25px] rounded-full bg-[#f4c542]"></span>
+                            Why Prodesk IT
+                        </div>
+
+                        <h2 class="max-w-[600px] text-[39px] font-extrabold leading-[1.08] tracking-[-0.055em] md:text-[48px] lg:text-[56px]">
+                            Why Choose Us?
+                        </h2>
+
+                    </div>
+
+                    <p class="max-w-[400px] text-base leading-[1.65] text-black/70 dark:text-white/70">
+                        We combine engineering expertise, innovation, and
+                        client-focused delivery to build solutions that create
+                        measurable business value.
+                    </p>
+
+                </div>
+
+
+                <!-- WHY GRID -->
+
+                <div class="grid grid-cols-1 gap-[18px] md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- 01 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-[#a3a3a3] dark:text-white/70">
+                                01
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                EXP
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Expertise
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            Our team comprises seasoned professionals with
+                            extensive experience across various domains,
+                            ensuring high-quality solutions and reliable
+                            technical delivery.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 02 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-black/70 dark:text-white/70">
+                                02
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                INN
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Innovation
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            We stay ahead of the curve by embracing emerging
+                            technologies and modern methodologies, helping
+                            businesses move forward with innovative solutions.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 03 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-black/70 dark:text-white/70">
+                                03
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                CLI
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Client-Centric Approach
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            Your success is our priority. We collaborate closely
+                            with you to understand your needs, goals, and
+                            challenges, tailoring solutions to deliver maximum
+                            value.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 04 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-black/70 dark:text-white/70">
+                                04
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                REL
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Reliability
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            With a proven track record of delivering successful
+                            projects on time and within budget, you can trust us
+                            to be your reliable technology partner.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 05 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-black/70 dark:text-white/70">
+                                05
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                PDT
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Product Development
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            From concept development to prototyping and testing,
+                            our experts help transform your product idea into a
+                            market-ready solution.
+                        </p>
+
+                    </article>
+
+
+                    <!-- 06 -->
+
+                    <article class="group relative min-h-[330px] overflow-hidden rounded-[14px] border border-black/10 bg-white p-[30px] transition hover:-translate-y-2 hover:border-[#765800]/55 hover:shadow-2xl dark:border-white/10 dark:bg-[#151515]">
+
+                        <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-[#f4c542] transition group-hover:scale-x-100"></div>
+
+                        <div class="flex items-center justify-between">
+
+                            <span class="text-[10px] font-bold tracking-[0.12em] text-black/70 dark:text-white/70">
+                                06
+                            </span>
+
+                            <div class="grid h-[46px] w-[58px] place-items-center rounded-[10px] bg-[#f4c542]/25 text-[9px] font-extrabold tracking-[0.08em] transition group-hover:rotate-[-4deg] group-hover:bg-[#f4c542]">
+                                PM
+                            </div>
+
+                        </div>
+
+                        <h3 class="mb-3.5 mt-[38px] text-[21px] font-bold leading-[1.25]">
+                            Project Management
+                        </h3>
+
+                        <p class="text-sm leading-[1.75] text-black/70 dark:text-white/70">
+                            We help ensure engineering projects stay on track
+                            through structured planning, resource management,
+                            coordination, and delivery from start to finish.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CTA
+        ====================================================== -->
+
+        <section
+            id="contact"
+            class="relative mt-[60px] grid min-h-[500px] place-items-center overflow-hidden bg-[#0b0b0b] px-5 py-[110px] text-center text-white lg:min-h-[520px] lg:px-[var(--page-gutter)]"
+        >
+
+            <!-- GRID -->
+
+            <div
+                class="absolute inset-0 opacity-[0.06]"
+                style="
+                    background-image:
+                        linear-gradient(#fff 1px, transparent 1px),
+                        linear-gradient(90deg, #fff 1px, transparent 1px);
+                    background-size: 52px 52px;
+                "
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- GEOMETRY -->
+
+            <div
+                class="absolute -left-[90px] -top-[120px] h-[330px] w-[330px] rotate-45 border border-[#f4c542]/20"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="absolute -bottom-[170px] -right-[100px] h-[420px] w-[420px] rotate-45 border border-[#f4c542]/20"
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="relative z-10">
+
+                <div
+                    class="mb-[22px] flex justify-center gap-2.5 text-[11px] font-bold uppercase tracking-[0.17em] text-[#8b8b8b]"
+                >
+                    <span class="h-[3px] w-[25px] rounded-full bg-[#f4c542]"></span>
+                    Let's build what's next
+                </div>
+
+
+                <h2
+                    class="mx-auto max-w-[780px] text-[45px] font-extrabold leading-[1.08] tracking-[-0.055em] md:text-[60px] lg:text-[72px]"
+                >
+                    Ready to Build Your
+
+                    <span class="relative whitespace-nowrap">
+                        <span class="relative z-10">
+                            Digital Future?
+                        </span>
+
+                        <span
+                            class="absolute bottom-[0.07em] left-0 right-0 z-0 h-[0.22em] bg-[#f4c542]"
+                            aria-hidden="true"
+                        ></span>
+                    </span>
+
+                </h2>
+
+
+                <p class="my-[26px] text-[17px] text-[#9d9d9d]">
+                    Let’s turn your ideas into a powerful digital experience.
+                </p>
+
+
+                <a
+                    href="https://prodesk.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex min-h-[52px] items-center justify-center rounded-[9px] bg-[#f4c542] px-6 text-sm font-bold text-[#0b0b0b] shadow-lg shadow-[#f4c542]/20 transition hover:-translate-y-1 hover:bg-[#ffd95a]"
+                >
+                    Get Started →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer
+        class="border-t border-[#252525] bg-[#0b0b0b] px-5 pb-[26px] pt-[65px] text-white lg:px-[clamp(20px,6vw,92px)] lg:pt-20"
+    >
+
+        <div
+            class="mx-auto grid w-full max-w-[1320px] grid-cols-2 gap-x-[30px] gap-y-[45px] pb-[70px] lg:grid-cols-[1.7fr_0.75fr_1fr_1.15fr] lg:gap-[55px]"
+        >
+
+            <!-- BRAND -->
+
+            <div class="col-span-full lg:col-span-1">
+
+                <a
+                    href="#home"
+                    class="inline-flex items-center gap-[3px] text-[19px] font-extrabold tracking-[-0.04em]"
+                >
+
+                    <img
+                        class="mr-[7px] h-10 w-10 rounded-full object-cover"
+                        src="./images/prodesk.png"
+                        alt="Prodesk IT logo"
+                        width="40"
+                        height="40"
+                    >
+
+                    <span>
+                        Prodesk
+                    </span>
+
+                    <span class="text-[#f4c542]">
+                        IT
+                    </span>
+
+                </a>
+
+
+                <p class="my-6 max-w-[360px] text-[13px] leading-[1.75] text-[#b0b0b0]">
+                    A digital marketing and technology company helping
+                    businesses build, grow, and scale their digital presence.
+                </p>
+
+
+                <!-- SOCIAL -->
+
+                <div class="flex flex-wrap gap-[9px]">
+
+                    <a
+                        href="https://in.linkedin.com/company/prodesk-it"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="grid min-h-[38px] place-items-center rounded-full border border-[#2b2b2b] px-3.5 text-[11px] font-semibold text-[#a1a1a1] transition hover:-translate-y-0.5 hover:border-[#f4c542] hover:text-[#f4c542]"
+                    >
+                        LinkedIn
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                        class="grid min-h-[38px] place-items-center rounded-full border border-[#2b2b2b] px-3.5 text-[11px] font-semibold text-[#a1a1a1] transition hover:-translate-y-0.5 hover:border-[#f4c542] hover:text-[#f4c542]"
+                    >
+                        Instagram
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="GitHub"
+                        class="grid min-h-[38px] place-items-center rounded-full border border-[#2b2b2b] px-3.5 text-[11px] font-semibold text-[#a1a1a1] transition hover:-translate-y-0.5 hover:border-[#f4c542] hover:text-[#f4c542]"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="flex flex-col items-start gap-[15px]">
+
+                <strong class="mb-2 text-xs tracking-[0.05em]">
+                    Quick Links
+                </strong>
+
+                <a href="#home" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Home
+                </a>
+
+                <a href="#about" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    About
+                </a>
+
+                <a href="#services" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Services
+                </a>
+
+                <a href="#why-us" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Why Us
+                </a>
+
+                <a href="#contact" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="flex flex-col items-start gap-[15px]">
+
+                <strong class="mb-2 text-xs tracking-[0.05em]">
+                    Services
+                </strong>
+
+                <a href="#services" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    SEO
+                </a>
+
+                <a href="#services" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Web Development
+                </a>
+
+                <a href="#services" class="text-[13px] text-[#b0b0b0] hover:text-[#f4c542]">
+                    Digital Marketing
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-span-full flex flex-col items-start gap-[15px] lg:col-span-1">
+
+                <strong class="mb-2 text-xs tracking-[0.05em]">
+                    Contact
+                </strong>
+
+                <a
+                    href="mailto:info@prodeskit.com"
+                    class="border-b border-[#3c3c3c] pb-2 text-[13px] font-semibold text-white hover:border-[#f4c542] hover:text-[#f4c542]"
+                >
+                    info@prodeskit.com →
+                </a>
+
+                <a
+                    href="tel:+918851407750"
+                    class="border-b border-[#3c3c3c] pb-2 text-[13px] font-semibold text-white hover:border-[#f4c542] hover:text-[#f4c542]"
+                >
+                    +91 88514 07750
+                </a>
+
+                <p class="text-[13px] leading-[1.6] text-[#b0b0b0]">
+                    Digital solutions for ambitious businesses.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOCATIONS -->
+
+        <div
+            class="mx-auto grid w-full max-w-[1320px] grid-cols-1 gap-[35px] border-t border-[#252525] py-8 lg:grid-cols-2 lg:gap-[50px]"
+        >
+
+            <!-- BENGALURU -->
+
+            <div class="flex items-start gap-3">
+
+                <div class="min-w-[62px] rounded-md border border-[#303030] px-2.5 py-[9px] text-center text-[7px] font-extrabold tracking-[0.08em] text-[#f4c542] sm:min-w-[72px] sm:text-[8px]">
+                    LOCATION
+                </div>
+
+                <div>
+
+                    <span class="mb-[9px] block text-xs font-bold tracking-[0.04em]">
+                        Bengaluru Corporate Office
+                    </span>
+
+                    <p class="m-0 text-xs leading-[1.7] text-[#999999]">
+                        Unit 101, Oxford Towers, 139/88,<br>
+                        HAL Old Airport Road, Kodihalli,<br>
+                        Bangalore, Karnataka, India – 560008
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOIDA -->
+
+            <div class="flex items-start gap-3">
+
+                <div class="min-w-[62px] rounded-md border border-[#303030] px-2.5 py-[9px] text-center text-[7px] font-extrabold tracking-[0.08em] text-[#f4c542] sm:min-w-[72px] sm:text-[8px]">
+                    LOCATION
+                </div>
+
+                <div>
+
+                    <span class="mb-[9px] block text-xs font-bold tracking-[0.04em]">
+                        North India Development Center
+                    </span>
+
+                    <p class="m-0 text-xs leading-[1.7] text-[#999999]">
+                        4th Floor, 91springboard building,<br>
+                        Plot No. D-107, Vyapar Marg, Sector 2,<br>
+                        Noida, Uttar Pradesh – 201301
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div
+            class="mx-auto flex w-full max-w-[1320px] flex-col items-start justify-between gap-[15px] border-t border-[#252525] pt-6 text-[11px] text-[#999999] sm:flex-row sm:items-center"
+        >
+
+            <span>
+                © 2026 Prodesk IT. All Rights Reserved.
+            </span>
+
+            <a
+                href="#home"
+                class="transition hover:text-[#f4c542]"
+            >
+                Back to top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</div>
+
+
+<!-- JavaScript -->
+
+<script src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,435 @@
+# Research and Development Report
+
+## Prodesk IT — Digital Marketing & Technology Website
+
+### 1. Project Overview
+
+The objective of this project was to design and develop a modern, professional, responsive website for **Prodesk IT**, a digital marketing and technology company.
+
+The website was designed to present the company's services, capabilities, business information, contact details, and overall digital presence in a clear and professional manner.
+
+The development process followed a structured approach starting with research and analysis, followed by UI/UX design, website development, content integration, responsive implementation, and final review.
+
+---
+
+# 2. Research Phase
+
+## 2.1 Existing Website and Brand Review
+
+The first step of the project was to review the existing Prodesk IT website and understand the company's existing digital identity.
+
+During the review, the following elements were analyzed:
+
+* Existing company branding
+* Company logo
+* Logo colors
+* Website structure
+* Services offered
+* Company information
+* Contact information
+* Office locations
+* Existing website content
+* Social media and external links
+* Overall visual identity
+
+The purpose of this research was to make sure that the new website remained consistent with the company's existing identity while improving its visual presentation and user experience.
+
+---
+
+## 2.2 Brand Color Research
+
+During the brand review, it was observed that the Prodesk IT logo primarily uses **black and yellow**.
+
+Based on this observation, the website's visual design was developed around a similar color direction.
+
+The selected visual approach focused on:
+
+* Black for strong branding and contrast
+* Yellow as an accent color
+* White/light surfaces for readability
+* Neutral shades for supporting text and backgrounds
+
+The purpose of using the existing brand colors was to maintain consistency between the company's logo and the website.
+
+This helped create a recognizable visual connection between the company's existing identity and the newly developed website.
+
+---
+
+# 3. UI/UX Design Research
+
+## 3.1 Figma Design
+
+After completing the initial research, the next stage was creating the website's UI design in **Figma**.
+
+The Figma design was used to plan the website before beginning the actual development.
+
+The design process included:
+
+* Navigation bar
+* Hero section
+* Company introduction
+* Services section
+* Company statistics
+* Why Choose Us section
+* Call-to-action section
+* Footer
+* Office location information
+* Social media links
+
+The Figma stage helped establish the visual structure, spacing, typography, layout, color system, and overall user experience before implementation.
+
+---
+
+## 3.2 Website Layout Planning
+
+The website was planned as a single-page corporate website with clearly separated sections.
+
+The main structure was:
+
+1. Home
+2. About
+3. Services
+4. Company Information
+5. Why Choose Us
+6. Contact / CTA
+7. Footer
+
+The navigation menu was also designed to allow users to quickly move between these sections.
+
+---
+
+# 4. Website Development
+
+After completing the UI design, the design was converted into a functional website using HTML, CSS, and JavaScript.
+
+### Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript
+* Figma for UI/UX design
+* Git/GitHub for project version control
+
+HTML was used to create the structure of the website.
+
+CSS was used for:
+
+* Layout
+* Colors
+* Typography
+* Spacing
+* Responsive design
+* Animations
+* Hover effects
+* Dark/light theme
+* Navigation styling
+* Cards and sections
+
+JavaScript was used for interactive functionality such as:
+
+* Theme switching
+* Mobile navigation
+* Menu interaction
+* Dynamic UI behavior
+
+---
+
+# 5. Company Logo Integration
+
+The official Prodesk IT logo was used in the website rather than creating a new logo.
+
+The logo was integrated into multiple areas of the website, including:
+
+* Browser favicon
+* Navigation bar
+* Footer
+
+Using the official logo helped maintain the company's existing brand identity throughout the website.
+
+The logo was also provided with appropriate alternative text to improve accessibility.
+
+---
+
+# 6. Company Information Research
+
+During the research phase, information available on the company's official website was reviewed and used as a reference for developing relevant sections of the new website.
+
+The research included:
+
+* Company identity
+* Services
+* Office locations
+* Company positioning
+* Why Choose Us information
+* Contact information
+* Social media presence
+
+The official website was treated as the primary reference point for company-specific information.
+
+This approach helped ensure that the new website remained aligned with the company's existing public information.
+
+---
+
+# 7. Additional Company Statistics
+
+As part of the website development, a dedicated company-information section was created to communicate key business statistics.
+
+The following information was added separately to the website:
+
+### 15+
+
+**YEARS OF ENGINEERING EXCELLENCE**
+
+### 300+
+
+**ENTERPRISE-GRADE PROJECTS DELIVERED**
+
+### 100%
+
+**ON-TIME DELIVERY**
+
+### 24/7
+
+**SUPPORT**
+
+These statistics were presented as a separate visual section to make important business information easier for visitors to identify and understand.
+
+The section was designed to create a quick overview of the company's experience, delivery focus, and support availability.
+
+---
+
+# 8. Why Choose Us Section
+
+The **Why Choose Us** section was developed using information and positioning referenced from the company's official website.
+
+The section communicates key areas such as:
+
+* Expertise
+* Innovation
+* Client-Centric Approach
+* Reliability
+* Product Development
+* Project Management
+
+The information was structured into individual cards so that visitors could scan the company's capabilities quickly.
+
+The purpose of this section was to explain not only what services the company provides, but also the characteristics and capabilities that support its service delivery.
+
+---
+
+# 9. Services Section
+
+A dedicated services section was created to present the company's digital capabilities.
+
+The website currently presents services including:
+
+### Search Engine Optimization
+
+The section explains the company's focus on search visibility, technical SEO, content strategy, and optimization.
+
+### Web Development
+
+The section presents modern, responsive, high-performance website development focused on usability, accessibility, speed, and conversion.
+
+### Digital Marketing
+
+The section presents data-driven marketing strategies focused on reach, qualified leads, and conversions.
+
+The services were displayed using individual cards to make the information easy to scan.
+
+---
+
+# 10. Office Location Integration
+
+The company's office information was also included in the website.
+
+Two locations were presented:
+
+### Bengaluru Corporate Office
+
+Unit 101, Oxford Towers, 139/88,
+HAL Old Airport Road, Kodihalli,
+Bangalore, Karnataka, India – 560008
+
+### North India Development Center
+
+4th Floor, 91springboard building,
+Plot No. D-107, Vyapar Marg, Sector 2,
+Noida, Uttar Pradesh – 201301
+
+The locations were placed in the footer so that users could access company location information from anywhere on the website.
+
+---
+
+# 11. External Link Integration
+
+After completing the main website structure, relevant external links were integrated.
+
+The purpose was to ensure that visitors could directly access the company's official external platforms.
+
+Links were added for:
+
+* Official company website
+* LinkedIn
+* Instagram
+* GitHub
+* Email
+* Telephone contact
+
+The links were designed to take users directly to the relevant official page or communication method instead of displaying static information only.
+
+This improves the practical usability of the website and creates connections between the website and the company's external digital presence.
+
+---
+
+# 12. Contact and Call-to-Action
+
+A dedicated CTA section was developed to encourage users to start a project or contact the company.
+
+The section contains:
+
+**"Ready to Build Your Digital Future?"**
+
+along with a short supporting message and a **Get Started** button.
+
+The CTA provides a clear next step for visitors after they have reviewed the company's services and capabilities.
+
+---
+
+# 13. Responsive Design
+
+The website was developed with responsive behavior in mind so that the layout can adapt to different screen sizes.
+
+The responsive design covers:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+The navigation system also includes a mobile menu so that navigation remains accessible on smaller screens.
+
+Content sections, cards, buttons, typography, and spacing were adjusted through CSS media queries to maintain usability across different viewport sizes.
+
+---
+
+# 14. Theme Functionality
+
+A theme toggle was also implemented as part of the website interaction.
+
+The website supports:
+
+* Light theme
+* Dark theme
+
+JavaScript is used to control the theme interaction, while CSS variables are used to manage the visual colors.
+
+This approach makes the theme system easier to maintain because colors can be controlled centrally through CSS variables.
+
+---
+
+# 15. Accessibility Considerations
+
+During development, basic accessibility practices were also considered.
+
+Examples include:
+
+* `alt` text for images
+* `aria-label` for navigation and buttons
+* Semantic HTML elements
+* Proper heading structure
+* Readable color contrast
+* Keyboard-accessible buttons and links
+
+These practices help make the website easier to understand and interact with for a wider range of users.
+
+---
+
+# 16. Final Development Process
+
+The overall development process followed these stages:
+
+### Phase 1 — Research
+
+Existing website and company identity were reviewed.
+
+↓
+
+### Phase 2 — Brand Analysis
+
+Logo, colors, company information, services, and digital presence were analyzed.
+
+↓
+
+### Phase 3 — UI/UX Design
+
+The website interface was designed in Figma.
+
+↓
+
+### Phase 4 — Development
+
+The Figma design was converted into HTML, CSS, and JavaScript.
+
+↓
+
+### Phase 5 — Content Integration
+
+Company information, services, statistics, office locations, and contact information were added.
+
+↓
+
+### Phase 6 — External Links
+
+Official website and relevant social/contact links were integrated.
+
+↓
+
+### Phase 7 — Responsive Implementation
+
+The website was adapted for desktop, tablet, and mobile screens.
+
+↓
+
+### Phase 8 — Testing and Review
+
+The website was reviewed for layout, navigation, images, links, responsiveness, theme functionality, and overall visual consistency.
+
+---
+
+# 17. Key Research Findings
+
+The research and development process resulted in several important design decisions:
+
+| Research Finding                                | Development Decision                  |
+| ----------------------------------------------- | ------------------------------------- |
+| Existing logo uses black and yellow             | Black/yellow visual direction adopted |
+| Company already has an established identity     | Existing logo retained                |
+| Users need quick access to services             | Dedicated service cards created       |
+| Company information should be visible           | Statistics section added              |
+| Company differentiators need clear presentation | Why Choose Us section created         |
+| Office information is useful for visitors       | Locations added to footer             |
+| External digital presence should be accessible  | Social and official links integrated  |
+| Users need a clear next action                  | CTA section added                     |
+| Users access websites from different devices    | Responsive design implemented         |
+| Different users may prefer different themes     | Light/dark theme functionality added  |
+
+---
+
+# 18. Conclusion
+
+The Prodesk IT website was developed through a research-driven design and development process.
+
+The project began with an analysis of the company's existing website and brand identity. The company's logo and visual characteristics were studied before creating the new interface in Figma.
+
+After the UI design was finalized, it was implemented using HTML, CSS, and JavaScript. Company-specific information was researched from the official website and integrated into appropriate sections.
+
+Additional sections such as company statistics and the **Why Choose Us** section were created to improve the presentation of important business information.
+
+The final website also includes the official company logo, office locations, services, contact information, external links, responsive layouts, CTA sections, and theme functionality.
+
+Overall, the development process followed a structured workflow of:
+
+**Research → Analysis → UI/UX Design → Development → Content Integration → External Links → Responsive Implementation → Testing**
+
+This approach helped transform the initial website requirement into a structured, professional, and functional digital marketing website.
